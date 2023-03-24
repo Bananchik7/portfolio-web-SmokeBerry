@@ -86,6 +86,17 @@ body {
   width: 70%;
   margin-bottom: 7%;
 }
+.main {
+  width: 80%;
+  margin: 0 auto;
+  height: 1200px;
+}
+.main__conteiner-menu {
+  width: 30%;
+}
+.main__conteiner-catalog {
+  width: 60%;
+}
 .about__info-title {
   font-family: IBM Plex Serif;
   font-size: 48px;
