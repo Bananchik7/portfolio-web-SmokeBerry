@@ -15,9 +15,10 @@ body {
   background: #f9f7f7;
 }
 .header__about {
+  width: 90%;
   align-items: center;
   display: flex;
-  height: 12s0px;
+  height: 120px;
   font-family: "Lilita One";
   font-style: normal;
 }
@@ -25,19 +26,20 @@ body {
   font-size: 70px;
   color: black;
   font-family: "Lilita One";
-  margin-left: 80px;
+  margin-left: 20px;
 }
 .header__nav {
   display: flex;
   margin-bottom: 80px;
+  margin-right: 20px;
 }
-.header__nav-contacts {
+.header__nav-contacts a {
   font-family: "Lilita One";
-  font-weight: bold;
   font-size: 15px;
   color: #000000;
   list-style: none;
   margin-left: 50px;
+  text-decoration: none;
 }
 .header__contacts-image {
   width: 30px;
@@ -47,46 +49,62 @@ body {
 }
 .header__menu {
   display: flex;
-  justify-content: start;
   padding-top: 1%;
   background-color: #c7d7ee;
-  height: 95px;
-}
-.header__advertising {
-  position: flex;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow-y: scroll;
-  background: #f9f7f7;
-  background: url(image/дымок\ 1.svg);
+  height: 70px;
 }
 .header__menu a {
   font-family: "IBM Plex Serif";
-  padding-left: 30px;
-  text-decoration: none;
   color: black;
+  font-size: 20px;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-
-/* весь хедер */
-.info--header {
-  padding: 3%;
-  height: 1ex;
-  background-color: #f9f7f7;
+.header__menu-row {
+  margin-left: 90px;
+  margin-top: 5px;
 }
-
-h3 {
+.header__menu-image {
+  margin-right: 150px;
+}
+.header__menu-image img {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+.header__advertising {
+  margin: 0;
+  padding: 0;
+}
+.header__advertising-scroll {
+  width: 1440px;
+  height: 600px;
+}
+.about__conteiner {
+  width: 70%;
+  margin-bottom: 7%;
+}
+.about__info-title {
   font-family: IBM Plex Serif;
   font-size: 48px;
   font-style: italic;
-  font-weight: 700;
-  line-height: 62px;
-  letter-spacing: 0em;
-  text-align: left;
   text-align: center;
   color: black;
+  margin-bottom: 2%;
 }
-h4 {
+.about__info-experience {
+  text-align: center;
+  font-family: IBM Plex Serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: black;
+  margin-bottom: 1%;
+}
+.about__info-details {
   text-align: center;
   font-family: IBM Plex Serif;
   font-size: 24px;
@@ -94,223 +112,82 @@ h4 {
   font-weight: 500;
   line-height: 40px;
   letter-spacing: 0.02em;
+  color: black;
+  margin-bottom: 3%;
+}
+.about__info-second {
   text-align: center;
+  font-family: IBM Plex Serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
   color: black;
 }
-h5 {
-  font-family: IBM Plex Serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  opacity: 0.52;
-}
-h6 {
-  font-family: "IBM Plex Serif";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 62px;
-  color: #000000;
-}
-p {
-  font-family: IBM Plex Serif;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 31px;
-  text-align: left;
-}
-.h2-geo {
-  display: flex;
-  font-family: "Lilita One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
-  color: #000000;
-}
-.h2-mail {
-  display: flex;
-  font-family: "Lilita One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
-  color: #000000;
-}
-.h2-phone {
-  display: flex;
-  font-family: "Lilita One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27px;
-  color: #000000;
-}
-
-.nav-link li a img {
-  height: 30px;
-  width: 30px;
-}
-.nav-img-bot {
-  justify-content: right;
-}
-.location-img {
-  height: 520px;
-  width: 609px;
-}
-/* навигация */
-
-.nav-link {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.nav-catalog {
-  font-family: "IBM Plex Serif";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
-  text-decoration-line: underline;
-  color: #000000;
-}
-.nav-about {
-  font-family: "IBM Plex Serif";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
-  text-decoration-line: underline;
-  color: #000000;
-}
-.nav-delivery {
-  font-family: "IBM Plex Serif";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
-  text-decoration-line: underline;
-  color: #000000;
-}
-.nav-contacts {
-  font-family: "IBM Plex Serif";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
-  text-decoration-line: underline;
-  color: #000000;
-}
-
-/*ads block*/
-.ads {
-  display: flex;
-  height: 651px;
-  width: 1440px;
-  justify-content: center;
-}
-/*main*/
-main {
-  width: 1440px;
-  height: 1600px;
-}
-
-/* about block*/
-.main-about {
-  padding-top: 70px;
-  justify-content: center;
-  display: flex;
-  width: 1030px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.main-about-first {
-  justify-content: center;
-  display: flex;
-  width: 1030px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.main-about-second {
-  padding-top: 30px;
-  margin-bottom: 0;
-}
-.border-about-bottom {
-  padding-top: 40px;
-  border-bottom: 1px solid #5082e4;
-}
-.about-block {
-  border-top: 1px solid #5082e4;
-  width: 1030px;
-  height: 800px;
-}
-/*contac block*/
-.us-block {
-  width: 1440px;
-  height: 1380px;
-}
-.us {
-  text-align: center;
-  height: 1380px;
-  width: 1440px;
-  padding-top: 100px;
-}
-/*footer*/
-footer {
-  width: 1440px;
-  height: 360px;
-  font-size: 16px;
-}
 .contact {
-  padding-top: 20px;
-}
-.footer-end {
-  padding-top: 50px;
-}
-.search-block {
-  margin: 0;
-  display: flex;
-  justify-content: right;
-}
-.plaseholder {
-  text-align: center;
-  height: 50px;
-  width: 450px;
-  border-radius: 110%;
+  width: 75%;
+  margin: 0 auto;
 }
 
-.main_koit {
+.contact__conteiner-title {
+  width: 100%;
+  font-family: "IBM Plex Serif";
+  text-align: center;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+.contact__conteiner-info {
   display: flex;
 }
-.content2_koit {
-  margin-left: 500px;
+.contact__info-details {
+  width: 50%;
+  font-size: 20px;
+  line-height: 31px;
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 40px;
+  top: 250px;
+  width: 516px;
+  left: 340px;
+}
+.contact__conteiner-map {
+  width: 50%;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 7%;
+}
+.footer__conteiner {
+  display: flex;
+}
+.footer__content-image {
+  margin-top: 10px;
+}
+.footer__image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.footer__content-details {
+  margin-top: 20px;
+  color: grey;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.footer__content-search {
+  width: 50%;
   margin-top: 30px;
 }
-.telegram_logo_koit {
-  width: 50px;
-  height: 50px;
-}
 
-.instagram_logo_koit {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  margin-left: 15px;
-}
-.whatsapp_logo_koit {
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-}
-.elem_koit {
-  color: grey;
-  font-size: 20px;
-}
-.elem2_koit {
+.footer__search-logo {
   color: grey;
   font-size: 20px;
   border: 1px solid grey;
@@ -318,14 +195,16 @@ footer {
   width: 500px;
   height: 50px;
 }
-.loop_logo_koit {
-  width: 50px;
-  height: 50px;
+.footer__logo-image {
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
   padding-right: 10px;
   float: right;
 }
-.aletr_logo_koit {
-  width: 150px;
-  height: 150px;
-  margin-left: 155px;
+.footer__search-age {
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 250px;
 }
