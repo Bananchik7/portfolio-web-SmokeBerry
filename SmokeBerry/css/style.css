@@ -82,20 +82,94 @@ body {
   width: 1440px;
   height: 600px;
 }
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.main__conteiner {
+  display: flex;
+}
+.main__conteiner-menu {
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.main__menu-row {
+  margin-top: 40px;
+  margin-right: 50px;
+  border-radius: 30px;
+  background: rgba(209, 227, 248, 0.7);
+}
+.main__menu-row li {
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 30px;
+  height: 90px;
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  list-style-type: none;
+  border-top: 1px solid white;
+}
+
+.main__conteiner-catalog {
+  width: 80%;
+  margin-left: 40px;
+}
+.main__catalog-all {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__catalog-product {
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main__product-image {
+  width: 160px;
+  height: 160px;
+}
+.main__product-name {
+  margin-top: 10px;
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+}
+.main__product-taste {
+  margin-top: 10px;
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+}
+.main__product-button {
+  display: flex;
+  color: black;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.main__button-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.main__button-price {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
 .about__conteiner {
   width: 70%;
   margin-bottom: 7%;
-}
-.main {
-  width: 80%;
-  margin: 0 auto;
-  height: 1200px;
-}
-.main__conteiner-menu {
-  width: 30%;
-}
-.main__conteiner-catalog {
-  width: 60%;
 }
 .about__info-title {
   font-family: IBM Plex Serif;
@@ -136,11 +210,11 @@ body {
   letter-spacing: 0.02em;
   color: black;
 }
+
 .contact {
   width: 75%;
   margin: 0 auto;
 }
-
 .contact__conteiner-title {
   width: 100%;
   font-family: "IBM Plex Serif";
@@ -192,12 +266,10 @@ body {
   font-size: 18px;
   font-style: italic;
 }
-
 .footer__content-search {
   width: 50%;
   margin-top: 30px;
 }
-
 .footer__search-logo {
   color: grey;
   font-size: 20px;
@@ -218,4 +290,22 @@ body {
   height: 80px;
   margin-top: 50px;
   margin-left: 250px;
+}
+
+/*  */
+.main__catalog-odnorazovye-sigarety {
+  display: none;
+  flex-wrap: wrap;
+}
+.main__catalog-zhidkosty {
+  display: none;
+  flex-wrap: wrap;
+}
+.main__catalog-isparitely {
+  display: none;
+  flex-wrap: wrap;
+}
+.main__catalog-katridgy {
+  display: none;
+  flex-wrap: wrap;
 }
