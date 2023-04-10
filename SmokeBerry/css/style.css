@@ -309,3 +309,222 @@ body {
   display: none;
   flex-wrap: wrap;
 }
+
+.product {
+  display: none;
+}
+.product-info {
+  display: none;
+}
+.product__background {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: block;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.product__conteiner {
+  width: 700px;
+  height: 700px;
+  background: #f9f7f7;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+.product__exit-image {
+  width: 30px;
+  height: 30px;
+  margin-left: 90%;
+  margin-top: 5%;
+}
+.product__conteiner-title {
+  margin-left: 10%;
+  margin-top: 3%;
+  font-size: 20px;
+  font-family: "Inter";
+  font-style: normal;
+}
+.product__conteiner-info {
+  display: flex;
+  margin-top: 6%;
+  margin-left: 8%;
+}
+.product__info-image {
+  margin-left: 3%;
+}
+.product__image {
+  width: 230px;
+  height: 300px;
+}
+.product__price-details {
+  box-shadow: 5px 5px 5px 5px #dfdfdf;
+  border-radius: 5px;
+  width: 260px;
+  height: 150px;
+  margin-top: 15%;
+  background: white;
+  margin-left: 8%;
+}
+.product__details-value {
+  display: flex;
+  margin-left: 12%;
+  margin-top: 8%;
+}
+.product__value-noactual {
+  margin-top: 8%;
+  font-size: 26px;
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 400;
+}
+.product__button-basket {
+  width: 80%;
+  height: 40px;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 20px;
+  color: white;
+  background: #5082e4;
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+.product__details-delivery {
+  font-size: 10px;
+  margin-left: 34%;
+  margin-top: 4%;
+}
+.product__price-delivery {
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.product__price-delivery-text {
+  font-size: 18px;
+  color: #5082e4;
+  text-decoration: none;
+}
+.product__conteiner-details {
+  display: flex;
+  margin-top: 5%;
+}
+.product__details-line {
+  width: 180px;
+}
+.product__line-image {
+  width: 180px;
+}
+.product__details-title {
+  width: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 25px;
+  font-family: "Inter";
+  font-style: normal;
+}
+.product__conteiner-text {
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 23px;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.basket__wrapper-none {
+  padding-top: 5%;
+  padding-left: 8%;
+}
+.basket-bottom {
+  padding-top: 20%;
+}
+
+.basket-button {
+  padding-top: 10%;
+  height: 100%;
+  display: flex;
+}
+.basket-button button {
+  width: 17%;
+  height: 40px;
+  background-color: #e18383;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  font-family: "IBM Plex Serif";
+}
+
+.basket__conteiner {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+/* Модальное содержание/коробка */
+.basket__conteiner-wrapper {
+  background-color: #d1e3f8;
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  height: 820px;
+  border-radius: 3%;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.basket__title {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: black;
+}
+.basket_title {
+  margin-left: 40px;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 31px;
+  text-align: left;
+}
+.basket_text {
+  margin-left: 40px;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 31px;
+  text-align: left;
+}
+.basket__wrapper-shop {
+  display: none;
+}

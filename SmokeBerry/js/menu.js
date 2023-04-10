@@ -51,3 +51,19 @@ main__isparitely.addEventListener("click", function () {
   main__catalog_isparitely.style.display = "flex";
   main__catalog_all.style.display = "none";
 });
+
+// открытие корзины
+let basket__conteiner = document.querySelector(".basket__conteiner");
+let btn = document.querySelector(".header__image-basket");
+let span = document.querySelector(".close");
+btn.onclick = function () {
+  basket__conteiner.style.display = "block";
+};
+span.onclick = function () {
+  basket__conteiner.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == basket__conteiner) {
+    basket__conteiner.style.display = "none";
+  }
+};
