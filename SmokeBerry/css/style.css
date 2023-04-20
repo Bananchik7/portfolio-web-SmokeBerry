@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.background {
+  background-image: url(../image/дымок\ 1.png);
+}
 body {
   overflow-x: hidden;
   position: flex;
@@ -61,10 +64,15 @@ body {
   margin-top: 15px;
   margin-left: 25px;
   margin-right: 25px;
+  text-decoration: none;
 }
 .header__menu-row {
-  margin-left: 90px;
+  margin-left: 100px;
   margin-top: 5px;
+}
+.header__menu-row a:hover {
+  text-decoration: underline;
+  font-weight: 500;
 }
 .header__menu-image {
   margin-right: 150px;
@@ -72,7 +80,11 @@ body {
 .header__menu-image img {
   width: 40px;
   height: 40px;
-  margin-left: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header__menu-image img:hover {
+  transform: scale(1.2);
 }
 .header__advertising {
   margin: 0;
@@ -114,6 +126,11 @@ body {
   list-style-type: none;
   border-top: 1px solid white;
 }
+.main__menu-row li:hover {
+  font-weight: 500;
+  transform: scale(1.2);
+  cursor: pointer;
+}
 
 .main__conteiner-catalog {
   width: 80%;
@@ -129,6 +146,10 @@ body {
   margin-right: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.main__catalog-product:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .main__product-image {
   width: 160px;
@@ -154,6 +175,7 @@ body {
   margin-top: 10px;
   margin-right: 50px;
 }
+
 .main__button-image {
   width: 20px;
   height: 20px;
@@ -268,27 +290,19 @@ body {
 }
 .footer__content-search {
   width: 50%;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: 250px;
 }
 .footer__search-logo {
   color: grey;
   font-size: 20px;
-  border: 1px solid grey;
-  border-radius: 15px;
   width: 500px;
   height: 50px;
-}
-.footer__logo-image {
-  width: 40px;
-  height: 40px;
-  padding-top: 5px;
-  padding-right: 10px;
-  float: right;
 }
 .footer__search-age {
   width: 80px;
   height: 80px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 250px;
 }
 
@@ -307,6 +321,14 @@ body {
 }
 .main__catalog-katridgy {
   display: none;
+  flex-wrap: wrap;
+}
+.main__catalog-electronnye-sigarety {
+  display: none;
+  flex-wrap: wrap;
+}
+.main__catalog-pod-systemy {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -435,15 +457,16 @@ body {
 }
 
 .basket__wrapper-none {
+  display: block;
   padding-top: 5%;
   padding-left: 8%;
 }
 .basket-bottom {
-  padding-top: 20%;
+  margin-top: 10%;
 }
 
 .basket-button {
-  padding-top: 10%;
+  margin-top: 10%;
   height: 100%;
   display: flex;
 }
@@ -475,8 +498,7 @@ body {
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
-  height: 820px;
+  width: 70%; /* Может быть больше или меньше, в зависимости от размера экрана */
   border-radius: 3%;
 }
 
@@ -525,6 +547,186 @@ body {
   line-height: 31px;
   text-align: left;
 }
-.basket__wrapper-shop {
+
+/* добавление товаров */
+.basket__shop-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 80%;
+}
+.basket__info-image {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.basket__shop-name {
+  margin-top: 40px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.basket__shop-quantity {
+  margin-top: 40px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.basket__shop-price {
+  margin-top: 40px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.basket__shop-cross {
+  margin-top: 40px;
+  width: 30px;
+  height: 30px;
+}
+.basket__wrapper-summ {
+  display: flex;
+  margin-top: 5%;
+}
+.basket__summ-title {
+  margin-left: 600px;
+  font-size: 22px;
+}
+.basket__summ-number {
+  margin-left: 15px;
+  font-size: 22px;
+}
+/* окно авторизации */
+.container {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+.table {
+  z-index: 0;
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: 30px auto 0;
+  background-color: rgb(121, 179, 215);
+  top: 8%;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+.table__cell {
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#registration__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input {
+  padding-left: 10px;
+  font-family: "IBM Plex Serif";
+  font-weight: 700;
+  font-style: italic;
+  line-height: 42px;
+  background-color: #edf2f8;
+  margin: 5px;
+  height: 24px;
+  width: 200px;
+  border-radius: 10px;
+  border: 0;
+}
+#exit {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.exit-btn {
+  width: 30px;
+  height: 30px;
+}
+.registration__text {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 0;
+}
+.registration__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.registration-btn {
+  cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
+  width: 180px;
+  background-color: #a9dba8;
+  border-radius: 38px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.question {
+  color: #165195;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+.signup-btn {
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  background-color: #edf2f8;
+  border-radius: 38px;
+}
+#signup__form {
   display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.signup__text {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 0;
+}
+.signup__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.signin-btn {
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  background-color: #edf2f8;
+  border-radius: 38px;
+}
+.forgot-btn {
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  background-color: #edf2f8;
+  border-radius: 38px;
+  margin-top: 10px;
+}
+#toRegistration {
+  cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
+  width: 180px;
+  background-color: #a9dba8;
+  border-radius: 38px;
+  font-size: 16px;
 }
