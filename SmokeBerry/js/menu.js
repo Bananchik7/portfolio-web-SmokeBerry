@@ -98,18 +98,18 @@ window.onclick = function (event) {
 let header__image_authorization = document.querySelector(
   ".header__image-authorization"
 );
-document.getElementById("con").hidden = true;
+document.querySelector("#con").hidden = true;
 header__image_authorization.onclick = function () {
-  document.getElementById("con").hidden = false;
+  document.querySelector("#con").hidden = false;
 };
-document.getElementById("exit").onclick = function () {
-  document.getElementById("con").hidden = true;
+document.querySelector("#exit").onclick = function () {
+  document.querySelector("#con").hidden = true;
 };
-document.getElementById("toSignIn").onclick = function () {
-  document.getElementById("registration__form").style = "display : none;";
-  document.getElementById("signup__form").style = "display : flex;";
+document.querySelector("#toSignIn").onclick = function () {
+  document.querySelector("#registration__form").style = "display : none;";
+  document.querySelector("#signup__form").style = "display : flex;";
 };
-document.getElementById("toRegistration").onclick = function () {
-  document.getElementById("signup__form").style = "display : none;";
-  document.getElementById("registration__form").style = "display : flex;";
+document.querySelector("#toRegistration").onclick = function () {
+  document.querySelector("#signup__form").style = "display : none;";
+  document.querySelector("#registration__form").style = "display : flex;";
 };

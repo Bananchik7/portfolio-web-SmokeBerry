@@ -476,7 +476,7 @@ body {
   background-color: #e18383;
   border-radius: 20px;
   border: none;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "IBM Plex Serif";
 }
 
@@ -498,7 +498,7 @@ body {
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
   border: 1px solid #888;
-  width: 70%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
   border-radius: 3%;
 }
 
@@ -553,11 +553,12 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  width: 80%;
+  width: 70%;
+  height: 200px;
 }
 .basket__info-image {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
 .basket__shop-name {
@@ -585,7 +586,7 @@ body {
   margin-top: 5%;
 }
 .basket__summ-title {
-  margin-left: 600px;
+  margin-left: 500px;
   font-size: 22px;
 }
 .basket__summ-number {
