@@ -1,0 +1,17 @@
+@media screen and (max-width: 1140px) {
+  .header__logo {
+    font-size: 40px;
+  }
+  .header__advertising-scroll {
+    width: 100%;
+  }
+  .main__conteiner-menu {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__catalog-product {
+    width: 400px;
+  }
+}
