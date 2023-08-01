@@ -73,6 +73,8 @@ body::after {
 }
 .header__nav-contacts a:hover {
   background-size: 100% 1px;
+  text-decoration: none;
+  color: #e18383;
 }
 .header__contacts-image {
   width: 12%;
@@ -82,9 +84,9 @@ body::after {
 }
 .header__menu {
   display: flex;
-  background-color: #b9e1ff;
+  background-color: #e2e2e2;
   height: 70px;
-  box-shadow: 10px 0px 60px #b9e1ff;
+  box-shadow: 10px 0px 60px #e2e2e2;
 }
 .header__menu-row {
   margin-top: 1.4%;
@@ -107,6 +109,8 @@ body::after {
 }
 .header__menu-row a:hover {
   background-size: 100% 1px;
+  text-decoration: none;
+  color: #000000;
 }
 .header__menu-image {
   width: 20%;
@@ -140,21 +144,20 @@ body::after {
 }
 .main__conteiner-menu {
   width: 23%;
-  margin-left: 10px;
-  margin-right: 0px;
+  margin-left: 2%;
+  margin-right: 1%;
 }
 .main__menu-row {
-  margin-top: 40px;
-  margin-right: 50px;
-  border-radius: 30px;
-  background: rgba(209, 227, 248, 0.7);
+  margin-top: 30%;
+  margin-right: 15%;
+  border-radius: 2%;
+  background: #e2e2e2;
 }
 .main__menu-row li {
-  padding-left: 40px;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding-left: 21%;
+  padding-top: 13%;
   height: 90px;
-  font-family: "Lilita One";
+  font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -162,11 +165,10 @@ body::after {
   border-top: 1px solid white;
 }
 .main__menu-row li:hover {
-  font-weight: 500;
-  transform: scale(1.2);
   cursor: pointer;
+  background-color: #e18383;
+  color: white;
 }
-
 .main__conteiner-catalog {
   width: 80%;
   margin-left: 40px;
