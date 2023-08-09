@@ -191,7 +191,7 @@ body::after {
 }
 .main__product-image {
   width: 90%;
-  height: 80%;
+  height: 70%;
 }
 .main__product-name {
   margin-top: 2%;
@@ -200,12 +200,14 @@ body::after {
   text-align: center;
   font-size: 120%;
   height: 18%;
+  margin-bottom: 2%;
 }
 .main__product-taste {
-  margin-top: 10px;
+  margin-top: -5%;
   font-family: "IBM Plex Serif";
   font-weight: 400;
   font-size: 12px;
+  margin-bottom: 5%;
 }
 .main__product-button {
   display: flex;
@@ -236,30 +238,29 @@ body::after {
 /* about */
 .about__conteiner {
   width: 70%;
+  margin-top: 10%;
   margin-bottom: 7%;
 }
 .about__info-title {
-  font-family: IBM Plex Serif;
-  font-size: 48px;
-  font-style: italic;
+  font-family: "IBM Plex Serif";
+  font-size: 280%;
   text-align: center;
   color: black;
   margin-bottom: 2%;
 }
 .about__info-experience {
   text-align: center;
-  font-family: IBM Plex Serif;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 500;
+  font-family: "IBM Plex Serif";
+  font-size: 150%;
+  font-weight: 600;
   letter-spacing: 0.02em;
   color: black;
   margin-bottom: 1%;
 }
 .about__info-details {
   text-align: center;
-  font-family: IBM Plex Serif;
-  font-size: 24px;
+  font-family: "IBM Plex Serif";
+  font-size: 150%;
   font-style: italic;
   font-weight: 500;
   line-height: 40px;
@@ -269,8 +270,8 @@ body::after {
 }
 .about__info-second {
   text-align: center;
-  font-family: IBM Plex Serif;
-  font-size: 24px;
+  font-family: "IBM Plex Serif";
+  font-size: 150%;
   font-style: italic;
   font-weight: 500;
   line-height: 40px;
@@ -278,6 +279,7 @@ body::after {
   color: black;
 }
 
+/* contact */
 .contact {
   width: 75%;
   margin: 0 auto;
@@ -286,45 +288,48 @@ body::after {
   width: 100%;
   font-family: "IBM Plex Serif";
   text-align: center;
-  font-size: 34px;
+  font-size: 250%;
   font-style: italic;
   font-weight: bold;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 .contact__conteiner-info {
   display: flex;
 }
 .contact__info-details {
-  width: 50%;
-  font-size: 20px;
-  line-height: 31px;
   font-family: "IBM Plex Serif";
   font-style: italic;
   list-style-type: none;
-  font-size: 24px;
+  font-size: 150%;
   line-height: 40px;
-  top: 250px;
-  width: 516px;
-  left: 340px;
 }
 .contact__conteiner-map {
   width: 50%;
 }
 
+/* footer */
 .footer {
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   margin-top: 7%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  background-color: #c0c0c0;
 }
 .footer__conteiner {
   display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.footer__content-info {
+  font-family: "IBM Plex Serif";
+  font-size: 110%;
+  margin-bottom: 5%;
 }
 .footer__content-image {
   margin-top: 10px;
 }
 .footer__image {
-  width: 50px;
-  height: 50px;
+  width: 10%;
   margin-right: 10px;
 }
 .footer__content-details {
