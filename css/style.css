@@ -317,8 +317,8 @@ body::after {
 }
 .footer__conteiner {
   display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .footer__content-info {
   font-family: "IBM Plex Serif";
@@ -326,34 +326,30 @@ body::after {
   margin-bottom: 5%;
 }
 .footer__content-image {
-  margin-top: 10px;
+  margin-top: 1%;
 }
 .footer__image {
   width: 10%;
   margin-right: 10px;
 }
-.footer__content-details {
-  margin-top: 20px;
-  color: grey;
-  font-size: 18px;
-  font-style: italic;
-}
 .footer__content-search {
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 250px;
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 7%;
+}
+.footer__line-input {
+  width: 80%;
+  margin-bottom: 4%;
+  height: 30px;
 }
 .footer__search-logo {
-  color: grey;
-  font-size: 20px;
-  width: 500px;
-  height: 50px;
+  color: black;
+  font-size: 120%;
 }
 .footer__search-age {
-  width: 80px;
-  height: 80px;
-  margin-top: 30px;
-  margin-left: 250px;
+  width: 12%;
+  margin-top: -4%;
+  margin-left: 90%;
 }
 
 /*  */
@@ -642,142 +638,4 @@ body::after {
 .basket__summ-number {
   margin-left: 15px;
   font-size: 22px;
-}
-/* окно авторизации */
-.container {
-  position: fixed;
-  top: 0;
-  z-index: 0;
-  width: 100%; /* Полная ширина */
-  height: 100%; /* Полная высота */
-  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
-  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
-}
-.table {
-  z-index: 0;
-  position: relative;
-  display: flex;
-  width: 400px;
-  height: 400px;
-  margin: 30px auto 0;
-  background-color: rgb(121, 179, 215);
-  top: 8%;
-  margin-top: 10%;
-  border-radius: 20px;
-}
-.table__cell {
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-#registration__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-input {
-  padding-left: 10px;
-  font-family: "IBM Plex Serif";
-  font-weight: 700;
-  font-style: italic;
-  line-height: 42px;
-  background-color: #edf2f8;
-  margin: 5px;
-  height: 24px;
-  width: 200px;
-  border-radius: 10px;
-  border: 0;
-}
-#exit {
-  cursor: pointer;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-}
-.exit-btn {
-  width: 30px;
-  height: 30px;
-}
-.registration__text {
-  padding-top: 20px;
-  font-size: 24px;
-  font-weight: 800;
-  margin-top: 0;
-}
-.registration__fields {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.registration-btn {
-  cursor: pointer;
-  padding: 5px 0;
-  text-align: center;
-  width: 180px;
-  background-color: #a9dba8;
-  border-radius: 38px;
-  margin-top: 30px;
-  font-size: 16px;
-}
-.question {
-  color: #165195;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 2px;
-  font-size: 10px;
-}
-.signup-btn {
-  cursor: pointer;
-  padding: 5px 0;
-  font-size: 16px;
-  text-align: center;
-  width: 180px;
-  background-color: #edf2f8;
-  border-radius: 38px;
-}
-#signup__form {
-  display: none;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.signup__text {
-  padding-top: 20px;
-  font-size: 24px;
-  font-weight: 800;
-  margin-top: 0;
-}
-.signup__fields {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.signin-btn {
-  margin-top: 30px;
-  cursor: pointer;
-  padding: 5px 0;
-  font-size: 16px;
-  text-align: center;
-  width: 180px;
-  background-color: #edf2f8;
-  border-radius: 38px;
-}
-.forgot-btn {
-  cursor: pointer;
-  padding: 5px 0;
-  font-size: 16px;
-  text-align: center;
-  width: 180px;
-  background-color: #edf2f8;
-  border-radius: 38px;
-  margin-top: 10px;
-}
-#toRegistration {
-  cursor: pointer;
-  padding: 5px 0;
-  text-align: center;
-  width: 180px;
-  background-color: #a9dba8;
-  border-radius: 38px;
-  font-size: 16px;
 }
