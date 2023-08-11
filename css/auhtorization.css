@@ -1,5 +1,9 @@
 /* окно авторизации */
-.container {
+.auhtorization {
+  width: 100%;
+  margin: 0 auto;
+}
+.auhtorization-background {
   position: fixed;
   top: 0;
   z-index: 0;
@@ -8,28 +12,105 @@
   background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
   background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
 }
-.table {
+.auhtorization__conteiner {
   z-index: 0;
   position: relative;
   display: flex;
-  width: 400px;
-  height: 400px;
+  width: 30%;
   margin: 30px auto 0;
-  background-color: rgb(121, 179, 215);
-  top: 8%;
-  margin-top: 10%;
+  background-color: #f5f5f5;
+  margin-top: 18%;
   border-radius: 20px;
 }
+.auhtorization__conteiner-exit {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 2%;
+}
+.auhtorization__exit-button {
+  width: 80%;
+}
+.auhtorization__conteiner-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.auhtorization__form-title {
+  padding-top: 5%;
+  font-size: 140%;
+  font-weight: 800;
+}
+.auhtorization__conteiner-input {
+  margin-bottom: 10%;
+}
+.auhtorization__input-form {
+  margin-left: 15%;
+  height: 25%;
+  width: 70%;
+  margin-bottom: 5%;
+}
+.auhtorization__button-regist {
+  padding: 5px 0;
+  text-align: center;
+  width: 110%;
+  background-color: #a9dba8;
+  border-radius: 38px;
+  margin-top: 20%;
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+}
+.auhtorization__button-regist:hover {
+  cursor: pointer;
+  background-color: #e9e9e9;
+  background-size: 100% 1px;
+  text-decoration: none;
+}
+.auhtorization__button-question {
+  color: #165195;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  font-size: 80%;
+  font-weight: 600;
+}
+.auhtorization__button-entrance {
+  cursor: pointer;
+  padding: 2% 0;
+  font-size: 100%;
+  text-align: center;
+  width: 80%;
+  background-color: #edf2f8;
+  border-radius: 38px;
+  font-weight: 500;
+  margin-bottom: 10%;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+}
+.auhtorization__button-entrance:hover {
+  cursor: pointer;
+  background-color: #e9e9e9;
+  background-size: 100% 1px;
+  text-decoration: none;
+}
+
 .table__cell {
   position: relative;
   vertical-align: middle;
   box-sizing: border-box;
 }
-#registration__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 input {
   padding-left: 10px;
   font-family: "IBM Plex Serif";
@@ -43,54 +124,13 @@ input {
   border-radius: 10px;
   border: 0;
 }
-#exit {
-  cursor: pointer;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-}
-.exit-btn {
-  width: 30px;
-  height: 30px;
-}
-.registration__text {
-  padding-top: 20px;
-  font-size: 24px;
-  font-weight: 800;
-  margin-top: 0;
-}
+
 .registration__fields {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.registration-btn {
-  cursor: pointer;
-  padding: 5px 0;
-  text-align: center;
-  width: 180px;
-  background-color: #a9dba8;
-  border-radius: 38px;
-  margin-top: 30px;
-  font-size: 16px;
-}
-.question {
-  color: #165195;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 2px;
-  font-size: 10px;
-}
-.signup-btn {
-  cursor: pointer;
-  padding: 5px 0;
-  font-size: 16px;
-  text-align: center;
-  width: 180px;
-  background-color: #edf2f8;
-  border-radius: 38px;
-}
+
 #signup__form {
   display: none;
   flex-wrap: wrap;

@@ -2879,38 +2879,36 @@
 
     <!-- auhtorization -->
     <div id="auhtorization" class="auhtorization">
-      <div id="con" class="container">
-        <div class="table">
-          <div class="table__cell">
-            <div type="button" id="exit" class="exitmark">
-              <img class="exit-btn" src="image/exitmark.png" />
+      <div class="auhtorization-background">
+        <div class="auhtorization__conteiner">
+          <div type="button" id="exit" class="exitmark">
+            <img class="exit-btn" src="image/exitmark.png" />
+          </div>
+          <div id="registration__form">
+            <p class="registration__text">Регистрация</p>
+            <div class="registration__fields">
+              <input name="name" placeholder="Имя" type="text" />
+              <input name="surname" placeholder="Фамилия" type="text" />
+              <input name="login" placeholder="Логин" type="text" />
+              <input name="password" placeholder="Пароль" type="password" />
             </div>
-            <div id="registration__form">
-              <p class="registration__text">Регистрация</p>
-              <div class="registration__fields">
-                <input name="name" placeholder="Имя" type="text" />
-                <input name="surname" placeholder="Фамилия" type="text" />
-                <input name="login" placeholder="Логин" type="text" />
-                <input name="password" placeholder="Пароль" type="password" />
-              </div>
-              <div class="buttons">
-                <div class="registration-btn">Зарегистрироваться</div>
-                <p class="question">Уже есть аккаунт?</p>
-                <div id="toSignIn" class="signup-btn">Войти</div>
-              </div>
+            <div class="buttons">
+              <div class="registration-btn">Зарегистрироваться</div>
+              <p class="question">Уже есть аккаунт?</p>
+              <div id="toSignIn" class="signup-btn">Войти</div>
             </div>
-            <div id="signup__form">
-              <p class="signup__text">Вход</p>
-              <div class="signup__fields">
-                <input name="login" placeholder="Логин" type="text" />
-                <input name="password" placeholder="Пароль" type="password" />
-              </div>
-              <div class="buttons">
-                <div class="signin-btn">Войти</div>
-                <div class="forgot-btn">Забыл/а пароль</div>
-                <p class="question">Еще нет аккаунта?</p>
-                <div id="toRegistration">Регистрация</div>
-              </div>
+          </div>
+          <div id="signup__form">
+            <p class="signup__text">Вход</p>
+            <div class="signup__fields">
+              <input name="login" placeholder="Логин" type="text" />
+              <input name="password" placeholder="Пароль" type="password" />
+            </div>
+            <div class="buttons">
+              <div class="signin-btn">Войти</div>
+              <div class="forgot-btn">Забыл/а пароль</div>
+              <p class="question">Еще нет аккаунта?</p>
+              <div id="toRegistration">Регистрация</div>
             </div>
           </div>
         </div>
