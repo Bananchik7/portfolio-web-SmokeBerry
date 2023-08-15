@@ -93,23 +93,3 @@ window.onclick = function (event) {
     basket__conteiner.style.display = "none";
   }
 };
-
-// окно авторизации
-let header__image_authorization = document.querySelector(
-  ".header__image-authorization"
-);
-document.querySelector("#con").hidden = true;
-header__image_authorization.onclick = function () {
-  document.querySelector("#con").hidden = false;
-};
-document.querySelector("#exit").onclick = function () {
-  document.querySelector("#con").hidden = true;
-};
-document.querySelector("#toSignIn").onclick = function () {
-  document.querySelector("#registration__form").style = "display : none;";
-  document.querySelector("#signup__form").style = "display : flex;";
-};
-document.querySelector("#toRegistration").onclick = function () {
-  document.querySelector("#signup__form").style = "display : none;";
-  document.querySelector("#registration__form").style = "display : flex;";
-};
