@@ -1,4 +1,4 @@
-"use strict";
+"use string";
 let header__image_authorization = document.querySelector(
   ".header__image-authorization"
 );

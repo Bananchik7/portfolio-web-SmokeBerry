@@ -113,7 +113,7 @@ body::after {
   color: #000000;
 }
 .header__menu-image {
-  width: 20%;
+  width: 10%;
   height: 40%;
   display: flex;
   margin-top: 1.4%;
@@ -345,14 +345,15 @@ body::after {
 .footer__search-logo {
   color: black;
   font-size: 120%;
+  margin-top: 5%;
 }
 .footer__search-age {
   width: 12%;
-  margin-top: -4%;
+  margin-top: -14%;
   margin-left: 90%;
 }
 
-/*  */
+/*  main */
 .main__catalog-odnorazovye-sigarety {
   display: none;
   flex-wrap: wrap;
@@ -378,130 +379,6 @@ body::after {
   flex-wrap: wrap;
 }
 
-.product {
-  display: none;
-}
-.product-info {
-  display: none;
-}
-.product__background {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  display: block;
-  z-index: 1;
-  left: 0;
-  top: 0;
-}
-.product__conteiner {
-  width: 700px;
-  height: 700px;
-  background: #f9f7f7;
-  margin-top: 5%;
-  margin-left: 28%;
-}
-.product__exit-image {
-  width: 30px;
-  height: 30px;
-  margin-left: 90%;
-  margin-top: 5%;
-}
-.product__conteiner-title {
-  margin-left: 10%;
-  margin-top: 3%;
-  font-size: 20px;
-  font-family: "Inter";
-  font-style: normal;
-}
-.product__conteiner-info {
-  display: flex;
-  margin-top: 6%;
-  margin-left: 8%;
-}
-.product__info-image {
-  margin-left: 3%;
-}
-.product__image {
-  width: 230px;
-  height: 300px;
-}
-.product__price-details {
-  box-shadow: 5px 5px 5px 5px #dfdfdf;
-  border-radius: 5px;
-  width: 260px;
-  height: 150px;
-  margin-top: 15%;
-  background: white;
-  margin-left: 8%;
-}
-.product__details-value {
-  display: flex;
-  margin-left: 12%;
-  margin-top: 8%;
-}
-.product__value-noactual {
-  margin-top: 8%;
-  font-size: 26px;
-  font-family: "Do Hyeon";
-  font-style: normal;
-  font-weight: 400;
-}
-.product__button-basket {
-  width: 80%;
-  height: 40px;
-  margin-left: 10%;
-  margin-top: 5%;
-  border-radius: 20px;
-  color: white;
-  background: #5082e4;
-  font-family: "Do Hyeon";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-}
-.product__details-delivery {
-  font-size: 10px;
-  margin-left: 34%;
-  margin-top: 4%;
-}
-.product__price-delivery {
-  margin-left: 30%;
-  margin-top: 20px;
-}
-.product__price-delivery-text {
-  font-size: 18px;
-  color: #5082e4;
-  text-decoration: none;
-}
-.product__conteiner-details {
-  display: flex;
-  margin-top: 5%;
-}
-.product__details-line {
-  width: 180px;
-}
-.product__line-image {
-  width: 180px;
-}
-.product__details-title {
-  width: 200px;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 25px;
-  font-family: "Inter";
-  font-style: normal;
-}
-.product__conteiner-text {
-  margin-top: 5%;
-  margin-left: 8%;
-  margin-right: 8%;
-  font-size: 23px;
-  font-family: "Inter";
-  font-style: normal;
-}
-
 .basket__wrapper-none {
   display: block;
   padding-top: 5%;
@@ -510,20 +387,54 @@ body::after {
 .basket-bottom {
   margin-top: 10%;
 }
-
+.basket-button-pay {
+  width: 17%;
+  height: 20%;
+  background-color: #a9dba8;
+  border-radius: 20px;
+  border: none;
+  font-size: 140%;
+  font-family: "IBM Plex Serif";
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+}
+.basket-button-pay:hover {
+  cursor: pointer;
+  background-color: #c0c0c0;
+  background-size: 100% 1px;
+  text-decoration: none;
+  color: #000000;
+}
 .basket-button {
   margin-top: 10%;
   height: 100%;
   display: flex;
 }
-.basket-button button {
+.basket-button-clear {
   width: 17%;
-  height: 40px;
+  height: 20%;
   background-color: #e18383;
   border-radius: 20px;
   border: none;
-  font-size: 25px;
+  font-size: 140%;
   font-family: "IBM Plex Serif";
+  margin-right: 50%;
+  margin-left: 8%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+}
+.basket-button-clear:hover {
+  cursor: pointer;
+  background-color: #c0c0c0;
+  background-size: 100% 1px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .basket__conteiner {
@@ -547,7 +458,6 @@ body::after {
   width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
   border-radius: 3%;
 }
-
 /* Кнопка закрытия */
 .close {
   color: #aaa;
@@ -555,43 +465,39 @@ body::after {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 .basket__title {
-  margin-top: 50px;
+  margin-top: 5%;
   text-align: center;
   font-family: "IBM Plex Serif";
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 150%;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
   color: black;
 }
 .basket_title {
-  margin-left: 40px;
+  margin-left: 32%;
   font-family: "IBM Plex Serif";
-  font-size: 24px;
-  font-style: italic;
+  font-size: 130%;
   font-weight: 500;
   line-height: 31px;
   text-align: left;
 }
 .basket_text {
-  margin-left: 40px;
   font-family: "IBM Plex Serif";
-  font-size: 24px;
+  font-size: 130%;
   font-style: italic;
   font-weight: 500;
   line-height: 31px;
-  text-align: left;
+  text-align: center;
+  margin-right: 5%;
 }
 
 /* добавление товаров */
@@ -632,8 +538,10 @@ body::after {
   margin-top: 5%;
 }
 .basket__summ-title {
-  margin-left: 500px;
-  font-size: 22px;
+  margin-left: 65%;
+  font-size: 130%;
+  font-family: "IBM Plex Serif";
+  font-weight: 500;
 }
 .basket__summ-number {
   margin-left: 15px;

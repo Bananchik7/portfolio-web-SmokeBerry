@@ -1,10 +1,9 @@
 "use string";
 
 let basket__wrapper_none = document.querySelector(".basket__wrapper-none");
-let basket_button = document.querySelector(".busket-button");
+let basket_button = document.querySelector(".basket-button-clear");
 let basket__summ_number = document.querySelector(".basket__summ-number");
 
-let exit_btn = document.querySelector(".exit-btn");
 // Добавление всех товаров
 let every_product = document.querySelectorAll('[data-product-id^="product"]');
 
@@ -55,7 +54,7 @@ every_product.forEach(function (one_product) {
       basket__shop_price.textContent = one_product.querySelector(
         ".main__button-price"
       ).textContent;
-      basket__shop_cross.src = exit_btn.src;
+      basket__shop_cross.src = auhtorization__exit_button.src;
 
       // удаление из корзины
       basket__shop_cross.addEventListener("click", function () {
