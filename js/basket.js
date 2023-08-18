@@ -54,7 +54,7 @@ every_product.forEach(function (one_product) {
       basket__shop_price.textContent = one_product.querySelector(
         ".main__button-price"
       ).textContent;
-      basket__shop_cross.src = auhtorization__exit_button.src;
+      basket__shop_cross.src = span.src;
 
       // удаление из корзины
       basket__shop_cross.addEventListener("click", function () {

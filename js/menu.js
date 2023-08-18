@@ -79,17 +79,17 @@ main__pod_systemy.addEventListener("click", function () {
 });
 
 // открытие корзины
-let basket__conteiner = document.querySelector(".basket__conteiner");
+let basket = document.querySelector(".basket");
 let btn = document.querySelector(".header__image-basket");
 let span = document.querySelector(".close");
 btn.onclick = function () {
-  basket__conteiner.style.display = "block";
+  basket.style.display = "flex";
 };
 span.onclick = function () {
-  basket__conteiner.style.display = "none";
+  basket.style.display = "none";
 };
 window.onclick = function (event) {
-  if (event.target == basket__conteiner) {
-    basket__conteiner.style.display = "none";
+  if (event.target == basket) {
+    basket.style.display = "none";
   }
 };

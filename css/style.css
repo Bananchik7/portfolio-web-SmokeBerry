@@ -379,6 +379,12 @@ body::after {
   flex-wrap: wrap;
 }
 
+.basket {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
 .basket__wrapper-none {
   display: block;
   padding-top: 5%;
@@ -438,7 +444,6 @@ body::after {
 }
 
 .basket__conteiner {
-  display: none; /* Скрыто по умолчанию */
   position: fixed; /* Оставаться на месте */
   z-index: 1; /* Сидеть на вершине */
   left: 0;
@@ -451,19 +456,16 @@ body::after {
 }
 /* Модальное содержание/коробка */
 .basket__conteiner-wrapper {
-  background-color: #d1e3f8;
+  background-color: #fdfdfd;
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
-  border-radius: 3%;
+  border-radius: 5%;
 }
 /* Кнопка закрытия */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  width: 5%;
 }
 .close:hover,
 .close:focus {
@@ -502,36 +504,38 @@ body::after {
 
 /* добавление товаров */
 .basket__shop-info {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
-  width: 70%;
-  height: 200px;
-}
-.basket__info-image {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
+  height: 150px;
+  margin-left: 5%;
 }
 .basket__shop-name {
-  margin-top: 40px;
-  font-size: 18px;
-  margin-left: 30px;
+  margin-top: 8%;
+  font-size: 120%;
+  margin-left: 5%;
+  font-family: "IBM Plex Serif";
+  font-weight: 600;
+  width: 45%;
 }
 .basket__shop-quantity {
-  margin-top: 40px;
-  font-size: 18px;
-  margin-left: 30px;
+  margin-top: 8%;
+  font-size: 120%;
+  margin-left: 10%;
+  font-family: "IBM Plex Serif";
+  font-weight: 600;
 }
 .basket__shop-price {
-  margin-top: 40px;
-  font-size: 18px;
-  margin-left: 30px;
+  margin-top: 8%;
+  font-size: 120%;
+  margin-left: 10%;
+  width: 20%;
 }
 .basket__shop-cross {
-  margin-top: 40px;
-  width: 30px;
-  height: 30px;
+  margin-top: 8%;
+  width: 5%;
+  height: 25%;
+  margin-right: 3%;
 }
 .basket__wrapper-summ {
   display: flex;
@@ -546,4 +550,7 @@ body::after {
 .basket__summ-number {
   margin-left: 15px;
   font-size: 22px;
+}
+.basket__summ-simbol {
+  font-size: 140%;
 }
